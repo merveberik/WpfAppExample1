@@ -24,5 +24,10 @@ namespace WpfAppExample1
         {
             InitializeComponent();
         }
+
+        private void btn_kapat_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAppExample1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="800" Background="White" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="MainWindow" Height="600" Width="800" Background="White" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" AllowsTransparency="True" WindowStyle="None">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="170"/>
@@ -33,7 +33,23 @@
                 </Border>
 
                 <Border Grid.Row="1">
-
+                    <DockPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <Image Height="100" Width="100">
+                            <Image.Style>
+                                <Style TargetType="Image">
+                                    <Setter Property="Source" Value="images/icon/contract.png"/>
+                                    <Setter Property="Height" Value="auto"/>
+                                    <Setter Property="Width" Value="100"/>
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Source" Value="images/icon/document2.png"/>
+                                            <Setter Property="Width" Value="105"/>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Image.Style>
+                        </Image>
+                    </DockPanel>
 
                 </Border>
             </Grid>
@@ -50,7 +66,7 @@
                 <Border Background="White">
                     <DockPanel Width="72" HorizontalAlignment="Right">
                         <Button Content="_" Width="35"/>
-                        <Button Content="x" Width="35"/>
+                        <Button Content="x" Width="35" x:Name="btn_kapat" Click="btn_kapat_Click"/>
                     </DockPanel>
                 </Border>
             </Grid>
