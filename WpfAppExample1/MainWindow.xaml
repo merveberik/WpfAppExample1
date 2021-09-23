@@ -27,7 +27,7 @@
                 <Border Grid.Row="0">
                     <DockPanel VerticalAlignment="Center" HorizontalAlignment="Center">
                         <Image Source="images/icon/reader.png" Height="24" Width="24"/>
-                        <Label Content="TRAIL PROGRAM" Foreground="White" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                        <Label Content="LIBRARY PROGRAM" Foreground="White" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
                     </DockPanel>
                     
                 </Border>
@@ -62,11 +62,10 @@
                     <RowDefinition Height="35"/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <Border Background="White"/>
                 <Border Background="White">
                     <DockPanel Width="72" HorizontalAlignment="Right">
-                        <Button Content="_" Width="35"/>
-                        <Button Content="x" Width="35" x:Name="btn_kapat" Click="btn_kapat_Click"/>
+                        <Button Content="__" Style="{DynamicResource minibutonlar}" FontSize="12"/>
+                        <Button Content="x" x:Name="btn_kapat" Click="btn_kapat_Click" Style="{DynamicResource minibutonlar}" FontSize="12"/> 
                     </DockPanel>
                 </Border>
             </Grid>
@@ -74,6 +73,36 @@
 
         <!--mini butonlar ve header-->
         <Border Background="#134187" Grid.Column="0" Grid.Row="1">
+            <StackPanel>
+                <Button Height="50" Style="{DynamicResource menubutonlar}">
+                    <DockPanel>
+                        <Image Source="images/icon/list.png" Width="32"/>
+                        <Label Content="Book List" Foreground="White"/>
+                    </DockPanel>
+                </Button>
+
+                <Button Height="50" Style="{DynamicResource menubutonlar}">
+                    <DockPanel>
+                        <Image Source="images/icon/list.png" Width="32"/>
+                        <Label Content="Book List" Foreground="White"/>
+                    </DockPanel>
+                </Button>
+
+                <Button Height="50" Style="{DynamicResource menubutonlar}">
+                    <DockPanel>
+                        <Image Source="images/icon/list.png" Width="32"/>
+                        <Label Content="Book List" Foreground="White"/>
+                    </DockPanel>
+                </Button>
+
+                <Button Height="50" Style="{DynamicResource menubutonlar}">
+                    <DockPanel>
+                        <Image Source="images/icon/list.png" Width="32"/>
+                        <Label Content="Book List" Foreground="White"/>
+                    </DockPanel>
+                </Button>
+
+            </StackPanel>
 
         </Border>
     </Grid>
