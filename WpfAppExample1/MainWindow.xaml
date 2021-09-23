@@ -75,30 +75,44 @@
         <Border Background="#134187" Grid.Column="0" Grid.Row="1">
             <StackPanel>
                 <Button Height="50" Style="{DynamicResource menubutonlar}">
-                    <DockPanel>
+                    <DockPanel Width="220" Margin="15, 0, 0, 0">
                         <Image Source="images/icon/list.png" Width="32"/>
-                        <Label Content="Book List" Foreground="White"/>
+                        <Label Content="Book List" Foreground="White" FontSize="16"/>
                     </DockPanel>
                 </Button>
 
                 <Button Height="50" Style="{DynamicResource menubutonlar}">
-                    <DockPanel>
-                        <Image Source="images/icon/list.png" Width="32"/>
-                        <Label Content="Book List" Foreground="White"/>
+                    <DockPanel Width="220" Margin="15, 0, 0, 0">
+                        <Image Source="images/icon/reader.png" Width="32"/>
+                        <Label Content="Reader List" Foreground="White" FontSize="16"/>
                     </DockPanel>
                 </Button>
 
                 <Button Height="50" Style="{DynamicResource menubutonlar}">
-                    <DockPanel>
-                        <Image Source="images/icon/list.png" Width="32"/>
-                        <Label Content="Book List" Foreground="White"/>
+                    <DockPanel Width="220" Margin="15, 0, 0, 0">
+                        <Image Source="images/icon/document2.png" Width="32"/>
+                        <Label Content="Deposit Books" Foreground="White" FontSize="16"/>
                     </DockPanel>
                 </Button>
 
                 <Button Height="50" Style="{DynamicResource menubutonlar}">
-                    <DockPanel>
-                        <Image Source="images/icon/list.png" Width="32"/>
-                        <Label Content="Book List" Foreground="White"/>
+                    <DockPanel Width="220" Margin="15, 0, 0, 0">
+                        <Image Source="images/icon/calendar.png" Width="32"/>
+                        <Label Content="Out of Time List" Foreground="White" FontSize="16"/>
+                    </DockPanel>
+                </Button>
+
+                <Button Height="50" Style="{DynamicResource menubutonlar}">
+                    <DockPanel Width="220" Margin="15, 0, 0, 0">
+                        <Image Source="images/icon/settings.png" Width="32"/>
+                        <Label Content="Settings" Foreground="White" FontSize="16"/>
+                    </DockPanel>
+                </Button>
+
+                <Button Height="50" Style="{DynamicResource menubutonlar}">
+                    <DockPanel Width="220" Margin="15, 0, 0, 0">
+                        <Image Source="images/icon/information.png" Width="32"/>
+                        <Label Content="About" Foreground="White" FontSize="16"/>
                     </DockPanel>
                 </Button>
 
