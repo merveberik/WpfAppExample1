@@ -5,8 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAppExample1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="800" Background="White" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" AllowsTransparency="True" WindowStyle="None">
-    <Grid>
+        Title="MainWindow" Height="600" Width="900" Background="{x:Null}" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" AllowsTransparency="True" WindowStyle="None">
+    <Grid Margin="15">
+        <Grid.Effect>
+            <DropShadowEffect Direction="265" Opacity="0.465" BlurRadius="10" ShadowDepth="4"/>
+        </Grid.Effect>
         <Grid.RowDefinitions>
             <RowDefinition Height="170"/>
             <RowDefinition/>
@@ -33,6 +36,7 @@
                 </Border>
 
                 <Border Grid.Row="1">
+                   
                     <DockPanel VerticalAlignment="Center" HorizontalAlignment="Center">
                         <Image Height="100" Width="100">
                             <Image.Style>
@@ -69,7 +73,10 @@
                     </DockPanel>
                 </Border>
 
-                <Border Grid.Row="1">
+                <Border Grid.Row="1" Background="#134187">
+                    <Border.Effect>
+                        <DropShadowEffect Direction="221" Opacity="0.25"/>
+                    </Border.Effect>
                     <StackPanel VerticalAlignment="Center" Margin="30,0,0,0">
                         <Label Content="WELCOME!!" FontSize="18"/>
                     </StackPanel>
@@ -95,6 +102,9 @@
 
         <!--mini butonlar ve header-->
         <Border Grid.Column="0" Grid.Row="1" Background="#FF134187">
+            <Border.Effect>
+                <DropShadowEffect/>
+            </Border.Effect>
             <StackPanel>
                 <Button Height="50" Style="{DynamicResource menubutonlar}">
                     <DockPanel Width="220" Margin="15, 0, 0, 0">
@@ -134,7 +144,7 @@
                 </Button>
 
                 <Canvas>
-                    <Border Canvas.Left="72" Canvas.Top="85" CornerRadius="10,10,10,10" Cursor="Hand">
+                    <Border Canvas.Left="72" Canvas.Top="47" CornerRadius="10,10,10,10" Cursor="Hand">
                         <Label Content="10.0.0.1" Foreground="White" Width="71" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
                         <Border.Style>
                             <Style TargetType="Border">
@@ -150,6 +160,11 @@
                 </Canvas>
 
             </StackPanel>
+        </Border>
+        
+        <!--content-->
+        <Border Grid.Column="1" Grid.Row="1" Background="#FFEEEEEE">
+            
         </Border>
     </Grid>
 </Window>
