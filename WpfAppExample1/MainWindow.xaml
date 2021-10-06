@@ -170,10 +170,10 @@
 
             </StackPanel>
         </Border>
-        
+
         <!--content-->
         <Border Grid.Column="1" Grid.Row="1" Background="#FFEEEEEE">
-            
+
         </Border>
     </Grid>
 </Window>
